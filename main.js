@@ -1,9 +1,9 @@
 const texts = document.querySelector('.texts');
-let  ala1 = document.getElementById("ala1");
-let  ala2 = document.getElementById("ala2");
-let  ala3 = document.getElementById("ala3");
-let  ala4 = document.getElementById("ala4");
-let  ala5 = document.getElementById("ala5");
+const ala1 = document.getElementById("ala1");
+const ala2 = document.getElementById("ala2");
+const ala3 = document.getElementById("ala3");
+const ala4 = document.getElementById("ala4");
+const ala5 = document.getElementById("ala5");
 
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -17,12 +17,11 @@ recognition.addEventListener('result', (e)=>{
     .join('');
 console.log(text);
   if(e.results[0].isFinal){
-    if (text.includes('Enciende foco 1') || text.includes('foco 1') || text.includes('enciende foco 1')) {           
-      
-      ala1.checked=1;
+    if (text.includes('Enciende foco 1') || text.includes('foco 1') || text.includes('enciende foco 1')) {            
+      ala1.style.background = "url(bulb_on.jpg)";
     }
     if (text.includes("Apaga foco uno") || text.includes('apaga foco 1')) {
-      ala1.checked=0;
+      ala1.style.background = "url(bulb_off.jpg)";
     }
     if (text.includes("Enciende foco 2") || text.includes('foco 2') || text.includes('enciende foco 2')) {      
       ala2.style.background = "url(bulb_on.jpg)";
@@ -47,13 +46,6 @@ console.log(text);
     }
     if (text.includes("Apaga foco cinco") || text.includes('apaga foco 5')) {
       ala5.style.background = "url(bulb_off.jpg)";
-    }
-    if(text.includes('Encender luces') || text.includes('encender luces')){
-      ala1.checked = 1;
-      ala2.checked = 1;
-      ala3.checked = 1;
-      ala4.checked = 1;
-      ala5.checked = 1;
     }
 
   }
