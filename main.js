@@ -2,7 +2,7 @@ const texts = document.querySelector('.texts');
 let ala1 = document.getElementById("ala1");
 let ala2 = document.getElementById("ala2");
 let ala3 = document.getElementById("ala3");
-let  ala4 = document.getElementById("ala4");
+let ala4 = document.getElementById("ala4");
 let  ala5 = document.getElementById("ala5");
 
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
