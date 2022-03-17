@@ -28,6 +28,7 @@ console.log(text);
     if (text.includes("Enciende foco 2") || text.includes('foco 2') || text.includes('enciende foco 2')) {      
       ala2.style.background = "url(bulb_on.jpg)";
       ala2.checked=1;
+      
     }
     if (text.includes("Apaga foco dos") || text.includes('apaga foco 2')) {
       ala2.style.background = "url(bulb_off.jpg)";
