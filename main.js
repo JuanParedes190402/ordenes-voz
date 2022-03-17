@@ -17,11 +17,12 @@ recognition.addEventListener('result', (e)=>{
     .join('');
 console.log(text);
   if(e.results[0].isFinal){
-    if (text.includes('Enciende foco 1') || text.includes('foco 1') || text.includes('enciende foco 1')) {            
-      ala1.style.background = "url(bulb_on.jpg)";
+    if (text.includes('Enciende foco 1') || text.includes('foco 1') || text.includes('enciende foco 1')) {           
+      
+      ala1.checked=1;
     }
     if (text.includes("Apaga foco uno") || text.includes('apaga foco 1')) {
-      ala1.style.background = "url(bulb_off.jpg)";
+      ala1.checked=0;
     }
     if (text.includes("Enciende foco 2") || text.includes('foco 2') || text.includes('enciende foco 2')) {      
       ala2.style.background = "url(bulb_on.jpg)";
