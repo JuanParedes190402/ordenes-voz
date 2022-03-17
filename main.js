@@ -48,11 +48,11 @@ console.log(text);
     }
     if (text.includes("Apaga foco cuatro") || text.includes('apaga foco 4')) {
       ala4.style.background = "url(bulb_off.jpg)";
-      ala4.checked=1;
+      ala4.checked=0;
     }
     if (text.includes("Enciende foco 5") || text.includes('foco 5') || text.includes('enciende foco 5')) {      
       ala5.style.background = "url(bulb_on.jpg)";
-      ala5.checked=0;
+      ala5.checked=1;
     }
     if (text.includes("Apaga foco cinco") || text.includes('apaga foco 5')) {
       ala5.style.background = "url(bulb_off.jpg)";
